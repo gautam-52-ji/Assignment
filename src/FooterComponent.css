@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: 'Syne';
+  src: url('./assets/font/syne.extra.otf') format('opentype');
+}
+
+.footer-container {
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-image: url('./assets/img/18591063.jpg'); /* Replace with your image path */
+}
+.footer-content {
+    width: 80%; /* Adjust based on your preference */
+}
+
+.newsletter-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 198px;
+}
+
+.newsletter-col, .form-col {
+    width: 48%; /* Adjust based on your preference */
+}
+
+.input-style, .textarea-style {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 10px;
+    outline: none; /* Removes the outline on focus */
+}
+
+.textarea-style {
+    height: 40px; /* Adjusted height to match the other input fields */
+    resize: none; /* Disabling the ability to resize */
+    overflow-y: auto; /* Allows scrolling if the content exceeds the height */
+}
+
+.get-in-touch-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.get-in-touch-row h2 {
+    font-weight: 800;
+    font-size: 100px;
+    font-family: 'Syne', Arial, sans-serif;
+    position: relative;
+}
+
+
+.circle-send {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid orange;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    margin-left: 780px;
+    position: absolute;
+}
+.error {
+    color: red;
+    font-size: 12px;
+}
+@media (max-width: 1024px) {
+    .footer-container{
+        height: 485px;
+    }
+    .newsletter-row{
+        margin-top: 11px;
+        
+    }
+    .newsletter-col{
+        text-align: center;
+        font-size: 11px;
+    }
+    .get-in-touch-row h2{
+        font-size: 27px;
+    }
+    .circle-send {
+        width: 72px;
+        height: 67px;
+        margin-left: 183px;
+        margin-bottom: 29px;
+    }
+    .newsletter-row {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    .newsletter-col, .form-col {
+        width: 100%; 
+    }
+}

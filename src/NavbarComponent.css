@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: 'Syne';
+  src: url('./assets/font/syne.extra.otf') format('opentype');
+}
+
+
+.navbar-container {
+  font-family: 'Poppins', Arial, sans-serif;
+
+}
+
+.top-navbar {
+  background-color: #1A1A1A;
+  color: #626262;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.right-top-content {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+.sub-navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: #161615;
+  color: #fff;
+  height: 500px;
+}
+
+.left-sub-content {
+  align-self: flex-start;
+}
+
+.right-sub-content {
+  align-self: flex-end;
+  display: flex;
+  gap: 10px;
+}
+
+.underline {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin: 10px 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+
+.freshlook {
+  position: absolute; 
+  top: 169px;          
+  left: 89px;          
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+.fresh {
+  font-size: 110px;
+  font-weight: 800;   
+  font-family: 'Syne', Arial, sans-serif;
+}
+
+.year {
+  font-size: 110px;
+  margin-left: 145px;
+  font-weight: 800;
+  color: transparent;  
+  -webkit-text-stroke: 2px white; 
+  text-stroke: 2px white; 
+  font-family: 'Syne', Arial, sans-serif;
+}  
+
+.lookout {
+  font-size: 110px;    
+  margin-left: 30px;
+  font-weight: 800;  
+  font-family: 'Syne', Arial, sans-serif;
+}
+
+.image-div {
+  height: 256px;
+  width: 654px;
+  margin-top: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;  /* Positioning the div */
+  right: 0;
+}
+.behind-image {
+  position: absolute;
+  margin-bottom: 338px;
+  margin-right: 134px;
+  height: 220px;
+}
+
+
+.front-image {
+  margin-right: 129px;
+  margin-bottom: 100px;
+  height: 356px;
+}
+.orange-div {
+  background-color: #F07E15;
+  margin-top: 163px;
+  height: 256px;
+  width: 654px;
+  margin-top: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;  /* Positioning the div */
+  right: 0;
+}
+.nav-links div > div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;  /* Adjust as needed */
+}
+.fas.fa-truck {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+/* ... existing styles ... */
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.hamburger-menu {
+  display: block;
+  align-self: flex-end;
+}
+.right-sub-content {
+  display: none;
+}
+
+.hamburger-menu {
+  display: block;
+  align-self: flex-end;
+}
+.nav-links {
+  display: none;
+}
+/* Media query for mobile responsiveness */
+@media (min-width: 769px) {
+  .right-sub-content {
+      display: flex;
+  }
+
+  .hamburger-menu {
+      display: none;
+  }
+
+  .nav-links {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+  }
+  
+}
+@media (max-width: 768px) {
+  .right-sub-content {
+      display: none;
+  }
+  .behind-image{
+    margin-right: 11px;
+  }
+  .front-image{
+    margin-right: 7px;
+  }
+  .freshlook{
+    top: 300px;
+    left: 64px;
+  }
+  .year{
+    font-size: 44px;
+    margin-left: 32px;
+  }
+  .lookout{
+    font-size: 44px;
+    margin-left: -60px;
+  }
+  .fresh{
+    font-size: 44px;
+    margin-left: -60px;
+  }
+}
+/* On larger screens */
+@media (min-width: 769px) {
+  .nav-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+}
+
+/* On mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* When the menu is open, show the nav-links by increasing max-height */
+  .sub-navbar.menu-open .nav-links {
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 43px;
+    margin-top: 55px;
+    font-size: 18px;
+  }
+
+  
+}
+/* Initially hide the nav-links for mobile and tablet views */
+.nav-links {
+  display: none;
+}
+
+/* When the menu is open, show the nav-links */
+.menu-open .nav-links {
+  display: block;
+}
+
+/* On laptop or larger screens, always display the nav-links */
+@media (min-width: 992px) { 
+  .nav-links {
+    display: flex;
+  }
+}
+
+/* Initially hide the orange div and related content for mobile and tablet views when the menu is open */
+.menu-open .orange-div, .menu-open .image-div, .menu-open .freshlook {
+  display: none;
+}
+/* For larger screens: display links side by side */
+.nav-links > div, 
+.nav-links > span {
+  display: inline-block;
+  margin-right: 20px;  /* Adjust this to space the items apart as needed */
+}
+
+/* For mobile/tablet screens: stack the links one below the other */
+@media (max-width: 991px) {
+  .nav-links > div,
+  .nav-links > span {
+    display: block;
+    margin-right: 0;
+  }
+}

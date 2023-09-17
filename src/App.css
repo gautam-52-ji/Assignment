@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.app-container {
+  font-family: 'Poppins', Arial, sans-serif;
+  height: 100vh;
+}
+
+footer {
+  background-color: #1A1A1A;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 0px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
